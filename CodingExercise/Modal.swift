@@ -39,10 +39,6 @@ struct Modal: View {
             }
            
         }
-        .onAppear {
-            // debugging print statement
-            print(item)
-        }
     }
 }
 
