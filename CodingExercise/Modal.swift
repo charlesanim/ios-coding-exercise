@@ -28,13 +28,15 @@ struct Modal: View {
                                 presentationMode.wrappedValue.dismiss()
                         }
                         }
-                }.padding(.bottom, 100)
+                }.padding(.horizontal)
+                .padding(.bottom, 100)
                 VStack {
                     WebImage(url: URL(string: item.url))
                         .resizable()
                         .indicator(.activity) // Activity Indicator
                         .transition(.fade(duration: 0.5))
                         .aspectRatio(contentMode: .fit)
+                    Spacer()
             }
             }
            
