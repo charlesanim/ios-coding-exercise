@@ -11,6 +11,11 @@
 		6AB0702827A8D02400CB987D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0702727A8D02400CB987D /* ContentView.swift */; };
 		6AB0702A27A8D02500CB987D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB0702927A8D02500CB987D /* Assets.xcassets */; };
 		6AB0702D27A8D02500CB987D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB0702C27A8D02500CB987D /* Preview Assets.xcassets */; };
+		6AB0703427A8D06200CB987D /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703327A8D06200CB987D /* Divider.swift */; };
+		6AB0703627A8D07D00CB987D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703527A8D07D00CB987D /* Card.swift */; };
+		6AB0703827A8D0D400CB987D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703727A8D0D400CB987D /* ViewModel.swift */; };
+		6AB0703B27A8D12500CB987D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB0703A27A8D12500CB987D /* SDWebImageSwiftUI */; };
+		6AB0703D27A8D78C00CB987D /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703C27A8D78C00CB987D /* Modal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		6AB0702727A8D02400CB987D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6AB0702927A8D02500CB987D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB0702C27A8D02500CB987D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6AB0703327A8D06200CB987D /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		6AB0703527A8D07D00CB987D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		6AB0703727A8D0D400CB987D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6AB0703C27A8D78C00CB987D /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB0703B27A8D12500CB987D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +63,10 @@
 			children = (
 				6AB0702527A8D02400CB987D /* CodingExerciseApp.swift */,
 				6AB0702727A8D02400CB987D /* ContentView.swift */,
+				6AB0703327A8D06200CB987D /* Divider.swift */,
+				6AB0703527A8D07D00CB987D /* Card.swift */,
+				6AB0703727A8D0D400CB987D /* ViewModel.swift */,
+				6AB0703C27A8D78C00CB987D /* Modal.swift */,
 				6AB0702927A8D02500CB987D /* Assets.xcassets */,
 				6AB0702B27A8D02500CB987D /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = CodingExercise;
+			packageProductDependencies = (
+				6AB0703A27A8D12500CB987D /* SDWebImageSwiftUI */,
+			);
 			productName = CodingExercise;
 			productReference = 6AB0702227A8D02400CB987D /* CodingExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 6AB0701927A8D02400CB987D;
+			packageReferences = (
+				6AB0703927A8D12500CB987D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 6AB0702327A8D02400CB987D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB0703827A8D0D400CB987D /* ViewModel.swift in Sources */,
+				6AB0703D27A8D78C00CB987D /* Modal.swift in Sources */,
+				6AB0703427A8D06200CB987D /* Divider.swift in Sources */,
 				6AB0702827A8D02400CB987D /* ContentView.swift in Sources */,
 				6AB0702627A8D02400CB987D /* CodingExerciseApp.swift in Sources */,
+				6AB0703627A8D07D00CB987D /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +290,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodingExercise/Preview Content\"";
+				DEVELOPMENT_TEAM = B4N95RZJ6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -276,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,6 +310,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ro.CodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,9 +322,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodingExercise/Preview Content\"";
+				DEVELOPMENT_TEAM = B4N95RZJ6R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,6 +334,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +342,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ro.CodingExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +371,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6AB0703927A8D12500CB987D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6AB0703A27A8D12500CB987D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6AB0703927A8D12500CB987D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6AB0701A27A8D02400CB987D /* Project object */;
 }
