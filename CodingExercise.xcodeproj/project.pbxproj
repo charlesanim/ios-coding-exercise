@@ -16,6 +16,7 @@
 		6AB0703827A8D0D400CB987D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703727A8D0D400CB987D /* ViewModel.swift */; };
 		6AB0703B27A8D12500CB987D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6AB0703A27A8D12500CB987D /* SDWebImageSwiftUI */; };
 		6AB0703D27A8D78C00CB987D /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0703C27A8D78C00CB987D /* Modal.swift */; };
+		6AB0704427A9B4B200CB987D /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0704327A9B4B200CB987D /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6AB0703527A8D07D00CB987D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		6AB0703727A8D0D400CB987D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6AB0703C27A8D78C00CB987D /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		6AB0704327A9B4B200CB987D /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				6AB0702727A8D02400CB987D /* ContentView.swift */,
 				6AB0703327A8D06200CB987D /* Divider.swift */,
 				6AB0703527A8D07D00CB987D /* Card.swift */,
+				6AB0704327A9B4B200CB987D /* LikeButton.swift */,
 				6AB0703727A8D0D400CB987D /* ViewModel.swift */,
 				6AB0703C27A8D78C00CB987D /* Modal.swift */,
 				6AB0702927A8D02500CB987D /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 				6AB0703D27A8D78C00CB987D /* Modal.swift in Sources */,
 				6AB0703427A8D06200CB987D /* Divider.swift in Sources */,
 				6AB0702827A8D02400CB987D /* ContentView.swift in Sources */,
+				6AB0704427A9B4B200CB987D /* LikeButton.swift in Sources */,
 				6AB0702627A8D02400CB987D /* CodingExerciseApp.swift in Sources */,
 				6AB0703627A8D07D00CB987D /* Card.swift in Sources */,
 			);

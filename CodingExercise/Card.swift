@@ -33,13 +33,14 @@ struct Card: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
-                        .font(.title)
+                        .font(.headline)
                         .fontWeight(.black)
                         .foregroundColor(.primary)
                         .lineLimit(3)
                 }
-                .layoutPriority(100)
                 Spacer()
+                LikeButton()
+                .layoutPriority(100)
             }
             .padding()
         }
