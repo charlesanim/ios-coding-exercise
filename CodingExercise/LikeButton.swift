@@ -57,7 +57,7 @@ struct CirclesView : View {
                      .fill(Color.red)
                      .frame(width: 10)
                      .scaleEffect(self.isPressed ? 0.1 : self.scale)
-                     .animation(.linear(duration: self.speed))
+                     .animation(Animation.linear(duration: self.speed), value: isPressed)
                      .offset(x:  self.radius * cos(CGFloat(num) * self.angle * .pi / 180),
                              y: self.radius * sin(CGFloat(num) * self.angle * .pi / 180))
              }
